@@ -1,12 +1,16 @@
-👥 Equipe do Projeto
+# 👥 Equipe do Projeto
 
-⚠️ Status: O projeto ainda não foi definido.
-Neste momento, apenas os papéis e responsabilidades de cada integrante foram estabelecidos.
+> ⚠️ **Status:** O projeto ainda não foi definido.  
+> Neste momento, apenas os papéis de cada integrante foram estabelecidos.
 
-Integrante	Função
-🧑‍💻 Luca	DEV
-🧪 Fernanda	QA / Documentação / Versionamento
-⚙️ Miguel	OPS / Infraestrutura
-📌 Observação
+## Integrantes
 
-As funções acima já foram definidas, porém o projeto, suas funcionalidades e objetivos ainda estão em definição.
+| Integrante | Função |
+|:---:|:---|
+| 🧑‍💻 **Luca** | **DEV** |
+| 🧪 **Fernanda** | **QA / Documentação / Versionamento** |
+| ⚙️ **Miguel** | **OPS / Infraestrutura** |
+
+---
+
+> 📌 **Observação:** As funções da equipe já foram definidas, porém o projeto, suas funcionalidades e objetivos ainda estão em definição.
