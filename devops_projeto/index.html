@@ -1,0 +1,305 @@
+Claro! Aqui está um site HTML completo com tema “Miguel ama o GitHub”, com visual inspirado no GitHub, animações e botão interativo:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel ama o GitHub ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d1117;
+      color: #f0f6fc;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 18px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .github-icon {
+      width: 38px;
+      height: 38px;
+      background: white;
+      color: #0d1117;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: #8b949e;
+      text-decoration: none;
+      margin-left: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+
+    .heart {
+      font-size: 90px;
+      animation: pulse 1.4s infinite;
+      filter: drop-shadow(0 0 25px #f85149);
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 85px);
+      margin: 20px 0;
+      background: linear-gradient(90deg, #58a6ff, #a371f7, #f85149);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      color: #8b949e;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .button {
+      margin-top: 35px;
+      padding: 15px 28px;
+      border: none;
+      border-radius: 8px;
+      background: #238636;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(35, 134, 54, 0.25);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #2ea043;
+      box-shadow: 0 0 30px rgba(46, 160, 67, 0.5);
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px 8% 80px;
+    }
+
+    .card {
+      width: 280px;
+      padding: 30px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #58a6ff;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .card .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      color: #58a6ff;
+    }
+
+    .card p {
+      color: #8b949e;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #010409;
+      border-top: 1px solid #30363d;
+      text-align: center;
+      padding: 25px;
+      color: #8b949e;
+    }
+
+    footer span {
+      color: #f85149;
+    }
+
+    #mensagem {
+      margin-top: 25px;
+      color: #3fb950;
+      font-weight: bold;
+      min-height: 24px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.18);
+      }
+    }
+
+    .particle {
+      position: fixed;
+      pointer-events: none;
+      animation: subir 4s linear forwards;
+      font-size: 25px;
+      z-index: 10;
+    }
+
+    @keyframes subir {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      to {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="github-icon">🐙</div>
+      Miguel.dev
+    </div>
+
+    <nav>
+      <a href="#amor">Amor</a>
+      <a href="#motivos">Motivos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="amor">
+      <div class="heart">❤️</div>
+
+      <h1>Miguel ama o GitHub</h1>
+
+      <p class="subtitle">
+        Entre commits, pull requests e muitos repositórios,
+        existe uma certeza: <strong>Miguel + GitHub = ❤️</strong>.
+      </p>
+
+      <button class="button" onclick="celebrar()">
+        Clique para provar o amor 🚀
+      </button>
+
+      <div id="mensagem"></div>
+    </section>
+
+    <section class="cards" id="motivos">
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h2>Código</h2>
+        <p>
+          Miguel passa horas criando código,
+          corrigindo bugs e deixando seus projetos cada vez melhores.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h2>Projetos</h2>
+        <p>
+          Cada novo repositório é uma nova aventura
+          cheia de ideias, criatividade e commits.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⭐</div>
+        <h2>GitHub</h2>
+        <p>
+          Onde os códigos vivem, os projetos crescem
+          e o amor do Miguel pela programação aumenta.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    Feito com <span>❤️</span> por alguém que sabe que
+    <strong>Miguel ama o GitHub.</strong>
+  </footer>
+
+  <script>
+    function celebrar() {
+      const mensagem = document.getElementById("mensagem");
+
+      mensagem.textContent =
+        "💚 CONFIRMADO: Miguel realmente ama o GitHub!";
+
+      for (let i = 0; i < 25; i++) {
+        const particle = document.createElement("div");
+
+        particle.className = "particle";
+        particle.textContent =
+          ["❤️", "💚", "⭐", "🐙", "🚀"][Math.floor(Math.random() * 5)];
+
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = (70 + Math.random() * 30) + "vh";
+        particle.style.animationDuration =
+          (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(particle);
+
+        setTimeout(() => {
+          particle.remove();
+        }, 5000);
+      }
+    }
+  </script>
+
+</body>
+</html>
